@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&family=Open+Sans:wght@300;400;500;600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../IMG/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/estilo.css">
+    <script src="../JS/index.js"></script>
+
+
+    <title>TecnoByte</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <h2>TecnoByte</h2>
+                <img src="../IMG/logo.PNG" alt="">
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../HTML/index.html">Home</a></li>
+                        <li><a href="../HTML/form.html">Conta</a></li>
+                        <li><a href="../HTML/novidades.html">Novidades</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="container-layout">
+            <div class="texto">
+                <h1>
+                    Fones bluetooth JBL
+                </h1>
+                <p>
+                    Prepare-se para uma experiência sonora como nenhuma outra com o Fone de Ouvido JBL.
+                    Projetado pela renomada marca de áudio, esse fone de ouvido Bluetooth oferece um mergulho
+                    total no mundo da música e do som cristalino.
+                </p>
+                <div class="butoes">
+                    <a href="../HTML/pagVendaFone.html"><button type="button" id="descricao">Descrição</button></a>
+                    <button onclick="exibirModal('Fone JBL', 1200)">Comprar</button>
+                </div>
+            </div>
+            <div class="img">
+                <img src="../IMG/fone.png" alt="">
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="titulo-oferta">
+            <h2>Últimas Ofertas</h2>
+        </div>
+        <div class="container-cards">
+            <div class="card">
+                <div class="img-card">
+                    <img src="../IMG/FonePreto.jpg" alt="">
+                </div>
+                <div class="nome-produto">
+                    <h3>Fone JBL</h3>
+                </div>
+                <div class="preco-botao">
+                    <h3>R$1200</h3>
+                    <button onclick="exibirModal('Fone JBL', 1200)">Comprar</button>
+                </div>
+            </div>
+           
+
+        </div>
+
+        <div class="verMais">
+            <a href="../HTML/pagVerMais.html"><button type="submit">Ver Mais</button></a>
+        </div>
+
+        <div class="bootstrap">
+
+        </div>
+
+        <!-- Modal e overlay -->
+        <div class="overlay" onclick="fecharModal()"></div>
+        <div class="modal">
+            <p id="modalContent"></p>
+            <button onclick="confirmarCompra()">Confirmar</button>
+            <button onclick="fecharModal()">Cancelar</button>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    
+</body>
+
+</html>

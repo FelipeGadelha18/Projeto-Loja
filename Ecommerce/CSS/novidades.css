@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E3E3E3;
+}
+
+/*Parte para definir o Header da pagina*/
+.header {
+    display: flex;
+    height: 5em;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1F1F1F;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1F1F1F;
+}
+
+.logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin: 0 25px;
+}
+
+.logo h2 {
+    color: white;
+}
+
+.logo img {
+    height: 32px;
+}
+
+.menu{
+    margin: 0 25px;
+}
+
+.menu nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.menu nav ul li {
+    list-style-type: none;
+}
+
+.menu nav ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E3E3E3;
+}
+
+/*Container para definir o tamanho e cor do layout*/
+.container {
+    width: 100%;
+    height: 35vw;
+    background-color: #1F1F1F;
+    position: relative;
+}
+
+/*Parte para definir o Header da pagina*/
+.header {
+    display: flex;
+    margin: 0 100px;
+    height: 5em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+}
+
+.logo h2 {
+    color: white;
+}
+
+.logo img {
+    height: 32px;
+}
+
+.menu nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.menu nav ul li {
+    list-style-type: none;
+}
+
+.menu nav ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.container-layout {
+    margin: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto {
+    width: 500px;
+}
+
+@media (max-width: 884px) {
+    .container-layout {
+      display: none;
+    }
+
+    .container {
+        width: 100%;
+        height: 15vw;
+      
+    }
+
+}
+
+.texto h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    color: white;
+    margin: 20px 0;
+}
+
+.texto p {
+    color: white;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.butoes button {
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.butoes #descricao {
+    border: 1px solid white;
+    background-color: #1F1F1F;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.butoes #comprar {
+    border: 1px solid white;
+    background-color: white;
+    color: #1F1F1F;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.butoes button:hover {
+    transform: scale(1.05);
+    transition: .4s;
+}
+
+.img img {
+    width: 400px;
+
+}
+
+@media (max-width: 1115px) {
+    .img img {
+      width: 300px;
+    }
+  }
+
+  @media (max-width: 1008px) {
+    .img img {
+      display: none;
+    }
+  }
+
+/*Parte da main*/
+main {
+    margin: 0 100px;
+}
+
+.titulo-oferta h2 {
+    margin: 35px 0;
+    font-size: 30px;
+}
+
+
+
+/*Definição dos cards de Produtos */
+.container-cards {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: space-between;
+
+}
+
+.card {
+    width: 225px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.img-card {
+    width: 100%;
+    height: 225px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.img-card img {
+    height: 175px;
+    margin: 0 auto;
+}
+
+.nome-produto h3 {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.preco-botao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preco-botao h3 {
+    font-size: 20px;
+}
+
+.preco-botao a button {
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #1F1F1F;
+    background-color: #E3E3E3;
+    width: 125px;
+    height: 35px;
+}
+
+.preco-botao a button:hover {
+    border-radius: 5px;
+    border: 1px solid #1F1F1F;
+    background-color: #1F1F1F;
+    color: white;
+    width: 125px;
+    height: 35px;
+}
+
+.verMais {
+    display: flex;
+    justify-content: flex-end;
+    margin: 25px auto;
+}
+
+.verMais button {
+    cursor: pointer;
+    height: 40px;
+    width: 225px;
+    background-color: #1F1F1F;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: bolder;
+    border: none;
+}
+
+.verMais button:hover {
+    color: #1F1F1F;
+    background-color: #E3E3E3;
+    border: 1px solid #1F1F1F;
+    transform: scale(1.00);
+    transition: .3s;
+}
+
+
+
+footer {
+    width: 100%;
+    height: 10em;
+    background-color: #1F1F1F;
+    bottom: 0;
+}

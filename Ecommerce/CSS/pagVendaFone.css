@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E3E3E3;
+}
+
+
+/*Parte para definir o Header da pagina*/
+.container-header {
+    width: 100%;
+    background-color: #1F1F1F;
+}
+
+.header {
+    display: flex;
+    margin: 0 100px;
+    height: 5em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+}
+
+.logo h2 {
+    color: white;
+}
+
+.logo img {
+    height: 32px;
+}
+
+.menu nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.menu nav ul li {
+    list-style-type: none;
+}
+
+.menu nav ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* PARTE RELACIONADA A MAIN DA PAGINA */
+main {
+    margin: 10px 100px;
+
+}
+
+/* PARTE RELACIONADA A PRIMEIRA CAIXA */
+.container-compra {
+    display: flex;
+    justify-content: space-between;
+}
+
+.caixaProduto {
+    width: 78%;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+
+.imgProduto img {
+    width: 400px;
+    margin: 2px;
+}
+
+.descProd {
+    margin-right: 10px;
+    margin-top: 25px;
+}
+
+.descProd h1 {
+    color: #1F1F1F;
+    margin: 15px 0;
+}
+
+.descProd p {
+    text-align: justify;
+    margin: 20px 0;
+}
+
+.descProd #cor {
+    font-size: 20px;
+}
+
+.descProd #cor span {
+    font-weight: bolder;
+}
+
+/* PARTE RELACIONADA A SEGUNDA CAIXA DESCRICAO */
+.caixaDesc {
+    width: 20%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caixaDesc h1 {
+    margin: 15px 5px;
+}
+
+.caixaDesc button {
+    margin: 15px 5px;
+    cursor: pointer;
+    height: 40px;
+    background-color: #1F1F1F;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: bolder;
+    border: none;
+}
+
+footer {
+    width: 100%;
+    height: 10em;
+    background-color: #1F1F1F;
+    bottom: 0;
+}
+
+
+
+@media (max-width: 1000px) {
+    .container-compra {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caixaProduto {
+        width: 78%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 10px;
+        margin: 30px auto;
+    }
+
+    .descProd h1 {
+        color: #1F1F1F;
+        margin: 15px 5px;
+    }
+
+    .descProd p {
+        text-align: justify;
+        margin: 20px 5px;
+    }
+
+    /* SEGUNDA CAIXA */
+    .caixaDesc {
+        width: 78%;
+        height: 250px;
+    }
+
+    .caixaDesc h1 {
+        text-align: center;
+    }
+}

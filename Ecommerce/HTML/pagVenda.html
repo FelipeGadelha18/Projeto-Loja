@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../IMG/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/pagVendaEst.css">
+    
+    <title>TecnoByte</title>
+</head>
+
+<body>
+    <header class="container-header">
+        <div class="header">
+            <div class="logo">
+                <h2>TecnoByte</h2>
+                <img src="../IMG/inteligencia-artificial.png" alt="">
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../HTML/index.html">Home</a></li>
+                        <li><a href="../HTML/form.html">Conta</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-compra">
+            <div class="caixaProduto">
+                <div class="imgProduto">
+                    <img src="../IMG/NotebookAsus.jpg" alt="">
+                </div>
+                <div class="descProd">
+                    <h1>Notebook Asus</h1>
+                    <p>
+                        Seja para trabalho ou lazer, o novo Notebook asus X515 é perfeito para o dia-a-dia,
+                        que oferece desempenho e recursos visuais imersivos. Sua Tela NanoEdge possui bordas
+                        incrivelmente finas e um revestimento fosco antirreflexo para uma experiência verdadeiramente
+                        envolvente. Além disso, o notebook asus X515 possui armazenamento SSD¹, que além de mais rápido
+                        é mais leve e mais seguro, enquanto seu chassi reforçado melhora a digitação e permite abrir e
+                        fechar a tampa em um movimento suave.
+                    </p>
+                    <hr>
+                    <p id="cor"><span>Cor: </span> Preto</p>
+                </div>
+            </div>
+            <div class="caixaDesc">
+                <h1>R$ 1200,00</h1>
+                <button id="comprarBtn">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close" onclick="fecharModal()">&times;</span>
+                <h2>Confirmar Compra</h2>
+                <p>Deseja confirmar a compra do Notebook Asus por R$1200,00?</p>
+                <button onclick="confirmarCompra()">Confirmar</button>
+                <button onclick="fecharModal()">Cancelar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../JS/index.js"></script>
+</body>
+
+</html>

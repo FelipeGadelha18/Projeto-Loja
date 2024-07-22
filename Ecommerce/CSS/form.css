@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #E3E3E3;
+}
+
+
+/*Parte para definir o Header da pagina*/
+
+.container-header {
+    width: 100%;
+    background-color: #1F1F1F;
+}
+
+.header {
+    display: flex;
+    margin: 0 100px;
+    height: 5em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+}
+
+.logo h2 {
+    color: white;
+}
+
+.logo img {
+    height: 32px;
+}
+
+.menu nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.menu nav ul li {
+    list-style-type: none;
+}
+
+.menu nav ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* MAIN */
+main {
+    margin: 0 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-form {
+    margin-top: 45px;
+    min-width: 350px;
+}
+
+.container-form form {
+    margin-top: 25px;
+}
+
+.input {
+    margin-bottom: 25px;
+}
+
+form input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+
+}
+
+form label {
+    font-weight: bold;
+    font-size: 17px;
+    color: #1F1F1F;
+}
+
+form #submit {
+    cursor: pointer;
+    background-color: #1F1F1F;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
